@@ -19,7 +19,7 @@ export const createDataPsm = async (request: express.Request, response: express.
     await response.send(dataPsm);
 }
 
-const supportedArtifacts = ['xml', 'json'];
+const supportedArtifacts = ['xml', 'json', 'csv'];
 
 export const modifyDataPsm = async (request: express.Request, response: express.Response) => {
     // Data field for Prisma

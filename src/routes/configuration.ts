@@ -10,6 +10,9 @@ function artifactsFromDataStructure(dataStructure: DataStructure) {
     if (dataStructure.artifact_json) {
         result.push('json');
     }
+    if (dataStructure.artifact_csv) {
+        result.push('csv');
+    }
     return result;
 }
 
